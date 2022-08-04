@@ -9,6 +9,8 @@ exports.getRoute = async (req, res, next) => {
     console.log(resData);
     if (resData) {
       res.redirect(resData.url);
+    }else{
+      return res.status(500).send('<h1>Page Not Found</h1>').end();
     }
   } catch (err) {
     return res.status(500).send({ message: "Something Went Wrong" }).end();
