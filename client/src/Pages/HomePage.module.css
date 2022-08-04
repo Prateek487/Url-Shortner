@@ -1,0 +1,71 @@
+.Home {
+  width: 80%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background: #5b5fd4 0% 0% no-repeat padding-box;
+  box-shadow: 1px 4px 140px #f5cd5740;
+  border-radius: 6px;
+  align-items: center;
+  font: normal normal normal 20px/24px "Montserrat", sans-serif;
+  max-width: 800px;
+}
+.Home .Form {
+  width: 80%;
+}
+.Home form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.Home form input,
+.Home form label,
+.Home .GeneratedUrl a,
+.Home form button {
+  padding: 1%;
+  margin: 1%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font: normal normal normal 20px/24px "Montserrat", sans-serif;
+}
+.Home .GeneratedUrl a {
+  background-color: #ffffff;
+  text-decoration: none;
+}
+.Home form label {
+  color: #ffffff;
+}
+.Home form button {
+  width: 60%;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Home form input:focus-visible {
+  outline: none;
+}
+.Home .GeneratedUrl {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 80%;
+}
+@media screen and (max-width: 600px) {
+  .Home {
+    font: normal normal normal 16px/20px "Montserrat", sans-serif;
+  }
+  .Home .GeneratedUrl{
+    width: 100%;
+  }
+  .Home form input,
+  .Home form label,
+  .Home form button,
+  .Home .GeneratedUrl a {
+    font: normal normal normal 16px/20px "Montserrat", sans-serif;
+  }
+  .Home .GeneratedUrl a{
+    font-size: 12px;
+  }
+}
